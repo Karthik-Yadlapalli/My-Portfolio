@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+  </head>
+
+  <body>
+
+    <div class="background-container">
+      <img style="height: 100%; width: 100%;" src="assets/7HBq.gif" alt="Background Image" class="background-image">
+    </div>
+
+
+<!--Menu bar-->
+<div></div>
+<div class="menu-bar">
+  <span class="menu-item  selected" onclick="selectMenuItem(this, 'home-container')">Home</span>
+  <span class="menu-item" onclick="selectMenuItem(this, 'about-container')">About</span>
+  <span class="menu-item" onclick="selectMenuItem(this, 'service-container')">Services</span>
+  <span class="menu-item" onclick="selectMenuItem(this, 'getInTouch-container')">Get in Touch</span>
+</div>
+
+  <!--Home-->
+  <div id="home-container" class="content-section">
+
+    <!--This is the content of the home page-->
+    <div class="home-content">
+      <h3>Hi there !!<br><b style="font-size: 60px; color: white;"> I'm Karthik</b></h3>
+      <h4 id="developer-title">.</Flutetr></h4>
+      <p>Welcome to my portfolio, I'm a passionate mobile and web application developer specilized in 
+creating functional cross plactform applications with focus on user centric design and clean code.
+I bring ideas to life, crafting seamless experiences that blend aesthetics and functionality. Example my portfolio 
+to witness the artistery of app development and let's connet your vision into breathtaking reality.</p>
+
+<div style="display: flex; justify-content: start; align-items: center;">
+  <span style="display: inline-block; padding-right: 6px; padding-top: 3px;"><a href="https://www.linkedin.com/in/karthik-naga-vamsi-yadlapalli-327896237/" target="_blank"><img style="height: 50px;" src="/assets/linkedin (1).png" alt=""></a></span>
+  <span style="display: inline-block; padding-right: 6px; padding-top: 3px;"><a href="https://www.linkedin.com/in/karthik-naga-vamsi-yadlapalli-327896237/" target="_blank"><img style="height: 50px;" src="/assets/whatsapp (2).png" alt=""></a></span>
+  <span style="display: inline-block; padding-right: 6px; padding-top: 3px;"><a href="https://github.com/Karthik-Yadlapalli" target="_blank"><img style="height: 50px;" src="/assets/github.png" alt=""></a></span>
+  <span style="display: inline-block; padding-right: 6px; padding-top: 3px;"><a href="https://github.com/Karthik-Yadlapalli" target="_blank"><img style="height: 50px;" src="/assets/instagram (1).png" alt=""></a></span>
+</div>
+    </div>
+    </div>
+
+    <!--About-->
+    <div id="about-container" class="content-section"><h1 style="padding-top: 100px;">About</h1></div>
+
+    <!--Services-->
+    <div id="service-container" class="content-section"><h1 style="padding-top: 100px;">Services</h1></div>
+
+    <!--Get in touch--> 
+    <div id="getInTouch-container" class="content-section"><h1 style="padding-top: 100px;">Get in touch</h1></div>
+
+    <!-- Link to JavaScript file -->
+    <script src="/script.js"></script>
+
+
+  </body>
+</html>

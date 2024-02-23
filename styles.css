@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+  }
+
+  p {
+    max-width: 800px; font-size: 14px; line-height: 20px; padding-top: 10px; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 400;
+  }
+
+  h3{
+    color: #D0D3D4; 
+    font-size: 300%;
+}
+
+h4{
+    color: #D0D3D4; 
+    font-size: 150%;
+}
+
+  @media screen and (max-width: 600px) {
+    /* Adjust font size for screens up to 600px wide (typically mobile devices) */
+    p {
+        /* max-width: 500px; */
+        font-size: 70%;
+        line-height: 18px;       
+        font-size: 14px;
+    }
+
+    h3{
+        color: #D0D3D4; 
+        font-size: 300%;
+    }
+
+    h4{
+        color: #D0D3D4; 
+        font-size: 100%;
+    }
+    
+    .menu-bar{
+        justify-content: center;
+    }
+
+    .menu-item{
+        margin-right: 10px;
+    }
+
+    #home-container{
+        height: 900px;
+        width: 100%;
+        /* background-color: black; */
+        color: white;
+        }
+
+    .home-content{
+        padding-left: 12%;
+        padding-top: 10px;
+        padding-right: 100px;
+        }
+  }
+
+
+    /* Style for the content */
+    .content {
+        position: relative;
+        z-index: 1; /* Ensure the content is in front of the background */
+        padding: 20px;
+        color: #fff; /* Example text color */
+      }
+      
+
+  /* Hide scrollbar */
+body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    background-color: black;
+    /* background-position: center; */
+    /* background-image: url("https://www.thisiscolossal.com/wp-content/uploads/2024/01/spherewave.gif"); */
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  /* Apply styles to the background container */
+.background-container {
+    position: fixed;
+    /* top: 1px; */
+    /* bottom: 160px; */
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 43.5%;
+    overflow: hidden;
+    z-index: -1; /* Ensure the background container is behind the content */
+  }
+  
+  /* Apply the blur effect to the background image */
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    filter: blur(0px); /* Adjust the blur amount as needed */
+  }
+  
+
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .menu-item-wrapper {
+    display: inline-block; /* Ensure the wrapper only takes up the necessary width */
+    border-radius: 20px; /* Apply border radius to the wrapper */
+    overflow: hidden; /* Hide any content that overflows the border radius */
+  }
+
+  .menu-bar{
+    position: fixed; /* Make the menu bar fixed */
+    top: 0; /* Place it at the top of the viewport */
+    left: 0; /* Align it to the left side */
+    width: 100%; 
+    
+    z-index: 1000;
+    background-color:transparent;
+    height: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .menu-item {
+padding-top: 10px;
+padding-bottom: 5px;
+/* padding-left: 5px; */
+padding-right: 0px;
+margin-right: 30px;
+color: whitesmoke;
+display: inline-block; /* Ensure the span takes up only the necessary width */
+/* Ensure the entire border is visible */
+}
+
+.selected {
+font-size: 19px;
+color: white;
+border-bottom: 2px solid transparent; /* Set a transparent border */
+/* border-radius: 20px; Set border radius */
+border-image: linear-gradient(to right, #f73357, #4444fa); /* Gradient border */
+border-image-slice: 1; 
+}
+
+#home-container{
+height: 1000px;
+width: 100%;
+/* background-color: black; */
+color: white;
+}
+
+#about-container{
+height: 900px;
+width: 100%;
+/* background-color: black; */
+color: white;
+}
+
+#service-container{
+height: 900px;
+width: 100%;
+/* background-color:black; */
+color: white;
+}
+
+#getInTouch-container{
+height: 900px;
+width: 100%;
+/* background-color: black; */
+color: white;
+}
+
+.home-content{
+padding-left: 12%;
+padding-top: 150px;
+padding-right: 30px;
+}
+
+.home-content-peragraph{
+    max-width: 800px; font-size: 120%; line-height: 20px; padding-top: 10px; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 400;
+}
+.home-desigenation{
+    color: #D0D3D4; font-size: 24px;
+}
+
+.content-section {
+    height: 1000px;
+    margin-top: 50px;
+    scroll-behavior: smooth;
+    /* border: 1px solid black; */
+  }
