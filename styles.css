@@ -1,9 +1,13 @@
 *{
-    margin: 0;
+  margin: 0;
   }
 
   p {
-    max-width: 800px; font-size: 14px; line-height: 20px; padding-top: 10px; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 400;
+    /* max-width: 800px;  */
+    font-size: 14px; 
+    line-height: 20px; 
+    padding-top: 10px; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 400; text-align: justify; line-height: 1.5;
   }
 
   h3{
@@ -11,52 +15,14 @@
     font-size: 300%;
 }
 
+.name-text{
+  font-size: 60px;
+}
+
 h4{
     color: #D0D3D4; 
     font-size: 150%;
 }
-
-  @media screen and (max-width: 600px) {
-    /* Adjust font size for screens up to 600px wide (typically mobile devices) */
-    p {
-        /* max-width: 500px; */
-        font-size: 70%;
-        line-height: 18px;       
-        font-size: 14px;
-    }
-
-    h3{
-        color: #D0D3D4; 
-        font-size: 300%;
-    }
-
-    h4{
-        color: #D0D3D4; 
-        font-size: 100%;
-    }
-    
-    .menu-bar{
-        justify-content: center;
-    }
-
-    .menu-item{
-        margin-right: 10px;
-    }
-
-    #home-container{
-        height: 900px;
-        width: 100%;
-        /* background-color: black; */
-        color: white;
-        }
-
-    .home-content{
-        padding-left: 12%;
-        padding-top: 10px;
-        padding-right: 100px;
-        }
-  }
-
 
     /* Style for the content */
     .content {
@@ -75,7 +41,7 @@ body {
     /* background-position: center; */
     /* background-image: url("https://www.thisiscolossal.com/wp-content/uploads/2024/01/spherewave.gif"); */
     background-repeat: no-repeat;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   /* Apply styles to the background container */
@@ -117,9 +83,8 @@ body {
     top: 0; /* Place it at the top of the viewport */
     left: 0; /* Align it to the left side */
     width: 100%; 
-    
     z-index: 1000;
-    background-color:transparent;
+    background-color:black;
     height: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -149,17 +114,22 @@ border-image-slice: 1;
 }
 
 #home-container{
-height: 1000px;
+height: 90vh;
 width: 100%;
-/* background-color: black; */
+/* background-color: red; */
 color: white;
 }
 
 #about-container{
 height: 900px;
 width: 100%;
-/* background-color: black; */
+/* margin:20px 100px 20px 20px ; */
+padding-top: 100px;
+text-align: center;
 color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 #service-container{
@@ -194,4 +164,57 @@ padding-right: 30px;
     margin-top: 50px;
     scroll-behavior: smooth;
     /* border: 1px solid black; */
+  }
+
+
+  
+  /* This is to set the styles for the mobile mobile view */
+  @media screen and (max-width: 600px) {
+    /* Adjust font size for screens up to 600px wide (typically mobile devices) */
+    p {
+        /* max-width: 500px; */
+        font-size: 70%;
+        line-height: 18px;       
+        font-size: 14px;
+        /* color: red; */
+    }
+
+    h3{
+        color: #D0D3D4; 
+        font-size: 250%;
+    }
+    .name-text{
+      font-size: 50px;
+    }
+
+    h4{
+        color: #D0D3D4; 
+        font-size: 100%;
+    }
+    
+    .menu-bar{
+        justify-content: center;
+        padding-left: 0px;
+        margin: 0px;
+    }
+
+    .menu-item{
+        margin-right: 24px;
+        /* padding: 0px 20px; */
+        /* background-color: red; */
+    }
+
+    #home-container{
+        height: 800px;
+        width: 100%;
+        padding-top: 150px;
+        /* background-color: black; */
+        color: white;
+        }
+
+    .home-content{
+        padding-left: 12%;
+        padding-top: 100px;
+        padding-right: 100px;
+        }
   }
